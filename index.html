@@ -117,7 +117,7 @@
             <img id="avatar-img" 
                  src="imageportfolio.jpeg" 
                  alt="Carmen's Avatar" 
-                 class="w-full h-full object-cover rounded-[14px] bg-slate-900">
+                 class="w-full h-full object-contain object-top rounded-[14px] bg-slate-900">
           </div>
         </div>
       </div>
@@ -233,7 +233,6 @@
           const user = await userRes.json();
           if (user.name) document.getElementById('profile-name').textContent = user.name;
           if (user.bio) document.getElementById('profile-bio').textContent = user.bio;
-          if (user.avatar_url) document.getElementById('avatar-img').src = user.avatar_url;
           if (user.location) document.getElementById('profile-location').textContent = user.location;
           document.getElementById('repo-count').textContent = user.public_repos ?? '--';
           document.getElementById('follower-count').textContent = user.followers ?? '--';
