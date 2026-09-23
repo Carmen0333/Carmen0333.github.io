@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carmen | Developer Portfolio</title>
+  <title>Ava Arce | Full-Stack Developer</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
@@ -15,10 +15,10 @@
         extend: {
           colors: {
             brand: {
-              50: '#f0f9ff',
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7',
+              50: '#fff1f7',
+              400: '#f9a8d4',
+              500: '#ec4899',
+              600: '#db2777',
             }
           }
         }
@@ -33,6 +33,26 @@
     .ambient-glow {
       animation: pulse-slow 8s ease-in-out infinite;
     }
+    .bg-slate-950 { background-color: #240817 !important; }
+    .bg-slate-900 { background-color: #3b1028 !important; }
+    .bg-slate-800 { background-color: #59183d !important; }
+    .bg-slate-700 { background-color: #74204f !important; }
+    .bg-slate-900\/60, .bg-slate-900\/70, .bg-slate-900\/80, .bg-slate-900\/40 { background-color: rgba(59, 16, 40, 0.75) !important; }
+    .border-slate-800, .border-slate-800\/80, .border-slate-800\/60, .border-slate-700 { border-color: #70204d !important; }
+    .text-slate-100 { color: #fff1f7 !important; }
+    .text-slate-400 { color: #f3b4d3 !important; }
+    .text-slate-500 { color: #d58aad !important; }
+    .text-slate-300 { color: #f8d0e2 !important; }
+    .placeholder-slate-500::placeholder { color: #d58aad !important; }
+    .from-indigo-400, .to-indigo-400 { --tw-gradient-to: #f472b6 var(--tw-gradient-to-position) !important; }
+    .to-indigo-600 { --tw-gradient-to: #be185d var(--tw-gradient-to-position) !important; }
+    .bg-indigo-500\/10 { background-color: rgba(236, 72, 153, 0.1) !important; }
+    .border-emerald-500\/30 { border-color: rgba(244, 114, 182, 0.35) !important; }
+    .bg-emerald-500\/10 { background-color: rgba(236, 72, 153, 0.12) !important; }
+    .text-emerald-400 { color: #f9a8d4 !important; }
+    .bg-emerald-400 { background-color: #f472b6 !important; }
+    .bg-sky-700 { background-color: #be185d !important; }
+    .hover\:bg-sky-600:hover { background-color: #db2777 !important; }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-brand-500 selection:text-white relative overflow-x-hidden">
@@ -46,7 +66,7 @@
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#about" class="flex items-center gap-2 font-bold text-lg tracking-tight hover:text-brand-400 transition-colors">
         <i data-lucide="terminal" class="w-5 h-5 text-brand-400"></i>
-        <span>Carmen0333<span class="text-brand-400">.dev</span></span>
+        <span>Ava Arce<span class="text-brand-400">.dev</span></span>
       </a>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
@@ -80,11 +100,11 @@
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            Hi, I'm <span id="profile-name" class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-indigo-400">Carmen</span>
+            Hi, I'm <span id="profile-name" class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-indigo-400">Ava Arce</span>
           </h1>
 
           <p id="profile-bio" class="text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed">
-            Software developer passionate about crafting responsive, functional, and modern web applications. Welcome to my GitHub portfolio.
+            Full-stack developer building thoughtful web apps, AI-powered experiences, and data-driven products with React, Node.js, PostgreSQL, and cloud platforms.
           </p>
 
           <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
@@ -121,7 +141,7 @@
           <div class="w-56 aspect-[9/16] sm:w-72 rounded-2xl bg-gradient-to-tr from-brand-500 to-indigo-600 p-1 shadow-2xl shadow-brand-500/20">
             <img id="avatar-img" 
                  src="imageportfolio.jpeg" 
-                 alt="Carmen's Avatar" 
+                 alt="Ava Arce's profile photo"
                  class="w-full h-full object-contain object-top rounded-[14px] bg-slate-900">
           </div>
         </div>
@@ -132,36 +152,64 @@
     <section id="skills" class="space-y-6">
       <div class="space-y-1">
         <h2 class="text-2xl font-bold text-white tracking-tight">Core Competencies</h2>
-        <p class="text-slate-400 text-sm">Technologies and tools used across various projects</p>
+        <p class="text-slate-400 text-sm">Full-stack, cloud, AI, and data tools I use to turn ideas into working experiences.</p>
       </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
         <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-slate-700 transition flex items-center gap-3">
           <i data-lucide="code" class="w-5 h-5 text-brand-400"></i>
           <div>
-            <p class="text-sm font-semibold text-white">JavaScript / TS</p>
-            <span class="text-xs text-slate-400">Frontend / Backend</span>
+            <p class="text-sm font-semibold text-white">JavaScript / TypeScript</p>
+            <span class="text-xs text-slate-400">Frontend and backend</span>
           </div>
         </div>
         <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-slate-700 transition flex items-center gap-3">
           <i data-lucide="layout" class="w-5 h-5 text-brand-400"></i>
           <div>
-            <p class="text-sm font-semibold text-white">HTML5 & Tailwind</p>
-            <span class="text-xs text-slate-400">Responsive UI/UX</span>
+            <p class="text-sm font-semibold text-white">React & Tailwind</p>
+            <span class="text-xs text-slate-400">Responsive interfaces</span>
           </div>
         </div>
         <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-slate-700 transition flex items-center gap-3">
           <i data-lucide="server" class="w-5 h-5 text-brand-400"></i>
           <div>
-            <p class="text-sm font-semibold text-white">Node.js</p>
-            <span class="text-xs text-slate-400">Server & APIs</span>
+            <p class="text-sm font-semibold text-white">Node.js & REST APIs</p>
+            <span class="text-xs text-slate-400">Services and integrations</span>
           </div>
         </div>
         <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-slate-700 transition flex items-center gap-3">
           <i data-lucide="git-branch" class="w-5 h-5 text-brand-400"></i>
           <div>
+            <p class="text-sm font-semibold text-white">Python, Java & C++</p>
+            <span class="text-xs text-slate-400">Programming and systems</span>
+          </div>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-brand-500/50 transition flex items-center gap-3">
+          <i data-lucide="database" class="w-5 h-5 text-brand-400"></i>
+          <div>
+            <p class="text-sm font-semibold text-white">PostgreSQL</p>
+            <span class="text-xs text-slate-400">Relational data systems</span>
+          </div>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-brand-500/50 transition flex items-center gap-3">
+          <i data-lucide="sparkles" class="w-5 h-5 text-brand-400"></i>
+          <div>
+            <p class="text-sm font-semibold text-white">AI Integrations</p>
+            <span class="text-xs text-slate-400">Gemini, Claude and Copilot</span>
+          </div>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-brand-500/50 transition flex items-center gap-3">
+          <i data-lucide="cloud" class="w-5 h-5 text-brand-400"></i>
+          <div>
+            <p class="text-sm font-semibold text-white">GCP & Azure</p>
+            <span class="text-xs text-slate-400">Cloud infrastructure</span>
+          </div>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-brand-500/50 transition flex items-center gap-3">
+          <i data-lucide="git-branch" class="w-5 h-5 text-brand-400"></i>
+          <div>
             <p class="text-sm font-semibold text-white">Git & GitHub</p>
-            <span class="text-xs text-slate-400">Version Control</span>
+            <span class="text-xs text-slate-400">Version control and collaboration</span>
           </div>
         </div>
       </div>
@@ -172,7 +220,7 @@
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div class="space-y-1">
           <h2 class="text-2xl font-bold text-white tracking-tight">Featured Repositories</h2>
-          <p class="text-slate-400 text-sm">Live data directly synchronized from GitHub</p>
+          <p class="text-slate-400 text-sm">Selected work and experiments, live from GitHub.</p>
         </div>
 
         <!-- Filter Search Bar -->
@@ -204,7 +252,7 @@
       <div class="max-w-xl mx-auto space-y-2">
         <h2 class="text-2xl sm:text-3xl font-bold text-white">Let's Connect</h2>
         <p class="text-slate-400 text-sm">
-          Interested in working together or checking out my open source contributions? Feel free to reach out.
+          Interested in building an AI-powered product or polished web experience? Let's connect.
         </p>
       </div>
 
@@ -230,7 +278,7 @@
   </main>
 
   <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
-    <p>© <span id="current-year"></span> Carmen0333. Hosted via GitHub Pages.</p>
+    <p>© <span id="current-year"></span> Ava Arce. Hosted via GitHub Pages.</p>
   </footer>
 
   <!-- Dynamic GitHub Integration Script -->
